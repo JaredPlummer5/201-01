@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #number1 {
+            color: #FAE359;
+            background-color: brown;
+        }
+
+        #number2 {
+            color: #08FF85;
+            background-color: #815B5B;
+        }
+
+        #number3 {
+            color: #07DBA6;
+            background-color: rgb(112, 111, 143);
+        }
+
+        #number4 {
+            color: #FF9408;
+            background-color: hsla(136, 100%, 50%, 1);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <H1>Class 01</H1>
+    </main>
+
+
+    <p id="number1">What is your name?</p>
+    <p id="number2">How are you doing</p>
+    <p id="number3">Do you like coding?</p>
+    <p id="number4">What other languages are you hoping to learn?</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+
+
+
+
+
+
+    </footer>
+
+    <script>
+        let name = prompt("What is your name?")
+        alert("Hi, " + name)
+        console.log(name)
+        console.log("This lets the user put in their name.")
+        let hru;
+        let isSad = false
+       
+       
+        do {
+            hru = prompt(`${name} how do you feel?`, "happy or sad")
+            if (hru == "happy") {
+                alert(`Hi, ${name}, I'm glad you're feeling ${hru}.`);
+                console.log(hru + " This will alert a message if the user types happy.");
+            } else if (hru == "sad") {
+                isSad = true
+                alert(`Hi, ${name}, I'm sorry to hear that you're feeling ${hru}.`);
+                console.log(hru + " This will alert a message if the user types happy.");
+            }
+        } while (hru != "happy" && hru != "sad" && likeCoding != 'Lighthouse prompt response');
+        console.log("This will run unitl the user types happy or sad")
+        let likeCoding;
+       
+       
+       
+        do {
+            likeCoding = prompt("Do you like coding?", "yes or no");
+            console.log(likeCoding + " This will asking if the user like coding");
+            alert(`Hi, ${name}, I'm glad to hear that you're feeling ${hru}, who like to code.`);
+
+        } while (likeCoding != "yes" && likeCoding != 'Lighthouse prompt response');
+        console.log("This will run until the user types yes")
+
+
+        
+        let otherLanguages = prompt("What other languages are you hoping to learn?");
+        console.log(otherLanguages + " This will prompt the user to enter any language they want to learn in the future.");
+        if (isSad == true) {
+            alert(`Hi, ${name},who likes to code. I'm sorry to hear that you're feeling ${hru}. I hope you learn ${otherLanguages}`);
+        } else {
+            alert(`Hi, ${name}, I'm glad to hear that you're feeling ${hru}.I hope you learn ${otherLanguages}`);
+        }
+
+
+    </script>
+</body>
+
+</html>
