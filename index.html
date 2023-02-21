@@ -69,33 +69,41 @@
         let name = prompt("What is your name?")
         alert("Hi, " + name)
         console.log(name)
+        
         console.log("This lets the user put in their name.")
+        
+        
+        
+        
         let hru;
         let isSad = false
-       
-       
         do {
             hru = prompt(`${name} how do you feel?`, "happy or sad")
-            if (hru == "happy") {
+            if (hru.toLowerCase() == "happy") {
                 alert(`Hi, ${name}, I'm glad you're feeling ${hru}.`);
                 console.log(hru + " This will alert a message if the user types happy.");
-            } else if (hru == "sad") {
+            } else if (hru.toLowerCase() == "sad") {
                 isSad = true
                 alert(`Hi, ${name}, I'm sorry to hear that you're feeling ${hru}.`);
                 console.log(hru + " This will alert a message if the user types happy.");
             }
-        } while (hru != "happy" && hru != "sad" && likeCoding != 'Lighthouse prompt response');
+        } while (hru != "happy" && hru != "sad" && hru != 'Lighthouse prompt response');
+        
+        
         console.log("This will run unitl the user types happy or sad")
+        
+        
+        
+        
         let likeCoding;
-       
-       
-       
         do {
             likeCoding = prompt("Do you like coding?", "yes or no");
             console.log(likeCoding + " This will asking if the user like coding");
             alert(`Hi, ${name}, I'm glad to hear that you're feeling ${hru}, who like to code.`);
 
-        } while (likeCoding != "yes" && likeCoding != 'Lighthouse prompt response');
+        } while (likeCoding.toLowerCase() != "yes" && likeCoding.toLowerCase() != 'Lighthouse prompt response');
+        
+        
         console.log("This will run until the user types yes")
 
 
